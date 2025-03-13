@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+:root {
+    --primary-color: #6366f1;
+    --primary-dark: #4f46e5;
+    --bg-color: #f8fafc;
+    --text-color: #1e293b;
+    --gray-light: #e2e8f0;
+    --gray-medium: #94a3b8;
+    --success-color: #10b981;
+    --danger-color: #ef4444;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+    --radius: 8px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+.container{
+    width: 100%;
+    max-width: 600px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    padding: 16px;
+}
+
+input,
+input {
+    padding: 0.75rem 1rem;
+    border: 2px solid var(--gray-light);
+    border-radius: var(--radius);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+#tit{
+    color: rgba(31, 30, 30, 0.5) ;
+
+}
+#des{
+    color: rgba(31, 30, 30, 0.5) ;
+
+}
+
+input {
+    font-weight: 500;
+}
+
+input {
+    font-size: 0.9rem;
+}
+
+input:focus,
+input:focus {
+    outline: none;
+    border-color: rgb(185, 102, 185);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.todo-item{
+    padding: 1.5rem;
+
+}
